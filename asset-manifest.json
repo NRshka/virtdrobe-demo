@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/virtdrobe-demo/static/css/main.e6c13ad2.css",
+    "main.js": "/virtdrobe-demo/static/js/main.1bc402e7.js",
+    "static/js/453.f393891f.chunk.js": "/virtdrobe-demo/static/js/453.f393891f.chunk.js",
+    "index.html": "/virtdrobe-demo/index.html",
+    "main.e6c13ad2.css.map": "/virtdrobe-demo/static/css/main.e6c13ad2.css.map",
+    "main.1bc402e7.js.map": "/virtdrobe-demo/static/js/main.1bc402e7.js.map",
+    "453.f393891f.chunk.js.map": "/virtdrobe-demo/static/js/453.f393891f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.1bc402e7.js"
+  ]
+}
