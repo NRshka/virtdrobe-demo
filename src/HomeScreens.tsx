@@ -38,18 +38,73 @@ export function HomeScreen({ selected }: { selected: number[] }) {
           ))}
         </div>
       </div>
-      {/* bottom nav */}
-      <div style={{
-        display: "flex", justifyContent: "space-around",
-        padding: "10px 0", borderTop: `1px solid ${GRAY}`,
-        background: WHITE,
-      }}>
-        {[["🏠", "Домой"], ["👗", "Гардероб"], ["✦", "Наряды"], ["👤", "Профиль"]].map(([icon, label], i) => (
-          <div key={label} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2 }}>
-            <span style={{ fontSize: 18 }}>{icon}</span>
-            <span style={{ fontSize: 9, fontWeight: 600, color: i === 0 ? PINK : "#aaa" }}>{label}</span>
-          </div>
-        ))}
+      {/* Bottom navigation */}
+      <div
+        style={{
+          position: "sticky",
+          bottom: 0,
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
+          padding: "12px 0 10px",
+          borderTop: `1px solid ${GRAY}`,
+          background: WHITE,
+        }}
+      >
+        {[
+          ["🏠", "Дом"],
+          ["👗", "Коллекции"],
+          ["📅", "Календарь"],
+          ["✦", "Идеи"],
+        ].map(([icon, label], i) => {
+          const active = i === 3;
+
+          return (
+            <div
+              key={label}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: 4,
+                cursor: "pointer",
+                minWidth: 64,
+              }}
+            >
+              <div
+                style={{
+                  width: 40,
+                  height: 40,
+                  borderRadius: 20,
+                  background: active ? "#fdf2fd" : "transparent",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: 18,
+                    opacity: active ? 1 : 0.7,
+                  }}
+                >
+                  {icon}
+                </span>
+              </div>
+
+              <span
+                style={{
+                  fontSize: 10,
+                  fontWeight: 700,
+                  color: active ? PINK : "#aaa",
+                  letterSpacing: 0.2,
+                }}
+              >
+                {label}
+              </span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

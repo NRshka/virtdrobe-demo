@@ -6,6 +6,8 @@ import { LoadingScreen, LoadingScreenDots } from "./LoadingScreens";
 import { PickScreen, PickScreenList, PickScreenSwipe } from "./PickScreens";
 import { SummaryScreen, SummaryScreenList } from "./SummaryScreens";
 import { HomeScreen, HomeScreenFeatured } from "./HomeScreens";
+import { MainScreen } from "./MainScreens";
+import { FeedScreenMain, FeedScreenAdvertise } from "./FeedScreens";
 
 export default function App() {
   const [idx, setIdx] = useState(0);
@@ -18,7 +20,7 @@ export default function App() {
   const prev = () => goTo(Math.max(0, idx - 1));
   const next = () => goTo(Math.min(screens.length - 1, idx + 1));
 
-  const flowLabels = ["Sign Up", "Sync", "Pick", "Summary", "Home"];
+  const flowLabels = ["Sign Up", "Sync", "Pick", "Summary", "Home", "Main", "Ideas"];
 
   const screenRenderers: Array<Array<() => React.ReactNode>> = [
     [() => <SignUpScreen />, () => <SignUpScreenEmail />],
@@ -26,6 +28,8 @@ export default function App() {
     [() => <PickScreen selected={selected} onToggle={toggle} />, () => <PickScreenList selected={selected} onToggle={toggle} />, () => <PickScreenSwipe selected={selected} onToggle={toggle} />],
     [() => <SummaryScreen selected={selected} />, () => <SummaryScreenList selected={selected} />],
     [() => <HomeScreen selected={selected} />, () => <HomeScreenFeatured selected={selected} />],
+    [() => <MainScreen/>],
+    [() => <FeedScreenMain/>, () => <FeedScreenAdvertise/>],
   ];
 
   const variantLabels: string[][] = [
@@ -34,6 +38,8 @@ export default function App() {
     ["Grid", "List", "Swipe"],
     ["Grid", "List"],
     ["Grid", "Featured"],
+    ["Main"],
+    ["Base posts feed", "Travel advertisement"],
   ];
 
   const variants = screenRenderers[idx];

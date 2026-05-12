@@ -24,7 +24,7 @@ export function SignUpScreen() {
             transition: "all 0.2s",
           }}
         >
-          <span style={{ color: "#aaa", fontWeight: 600, borderRight: "1.5px solid #e0e0e0", paddingRight: 10 }}>🇺🇸 +1</span>
+          <span style={{ color: "#aaa", fontWeight: 600, borderRight: "1.5px solid #e0e0e0", paddingRight: 10 }}>RU +7</span>
           <span>(555) 000-0000</span>
         </div>
       </div>
