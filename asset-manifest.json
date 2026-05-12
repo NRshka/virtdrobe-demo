@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/virtdrobe-demo/static/css/main.e6c13ad2.css",
-    "main.js": "/virtdrobe-demo/static/js/main.d50bbdc8.js",
+    "main.js": "/virtdrobe-demo/static/js/main.349e0bd0.js",
     "static/js/453.f393891f.chunk.js": "/virtdrobe-demo/static/js/453.f393891f.chunk.js",
     "static/media/travel_sample_adv.png": "/virtdrobe-demo/static/media/travel_sample_adv.1ee72d71d0b5bda375e2.png",
     "static/media/blouse.webp": "/virtdrobe-demo/static/media/blouse.14bc7939025991128e89.webp",
@@ -13,11 +13,11 @@
     "static/media/jeans2.webp": "/virtdrobe-demo/static/media/jeans2.e1ea7edc2a3b737fdca1.webp",
     "index.html": "/virtdrobe-demo/index.html",
     "main.e6c13ad2.css.map": "/virtdrobe-demo/static/css/main.e6c13ad2.css.map",
-    "main.d50bbdc8.js.map": "/virtdrobe-demo/static/js/main.d50bbdc8.js.map",
+    "main.349e0bd0.js.map": "/virtdrobe-demo/static/js/main.349e0bd0.js.map",
     "453.f393891f.chunk.js.map": "/virtdrobe-demo/static/js/453.f393891f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d50bbdc8.js"
+    "static/js/main.349e0bd0.js"
   ]
 }
